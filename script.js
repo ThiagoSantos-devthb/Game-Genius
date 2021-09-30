@@ -1,7 +1,7 @@
 let order = [];
 let clickedOrder = [];
 let score = 0;
-let next = true
+
 
 //0 - verde
 //1 - vermelho
@@ -26,13 +26,10 @@ let shuffleOrder = () => {
         
         lightColor(elementColor, +i, order[i])
        
-       
-      
-    
     }
 }
 
-//acende a proxima cor
+//ascende a proxima cor
 let lightColor = (element, turns, order) => {
    
     setTimeout(() => {
@@ -42,11 +39,6 @@ let lightColor = (element, turns, order) => {
         },500);
 
     },800 * turns + 1);
-    
-   
-
-    
-
     
 }
 

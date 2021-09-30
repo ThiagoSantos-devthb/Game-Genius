@@ -1,6 +1,8 @@
 # Genius era um brinquedo muito popular na década de 1980 distribuído pela Brinquedos Estrela
 ## Projeto para praticas em javascript
 
+![Genius](genius.jpg)
+
 ## Técnologias
 Para esse projeto foram usados Javascript, CSS e Html.
 

@@ -1,0 +1,96 @@
+
+ 
+:root {
+    --deep-blue: #110f1b;
+    --blue: rgb(23, 101, 173);
+    --blue-glow: rgb(73, 167, 255);
+    --blue-shadow: rgb(33, 148, 255);
+    --green: rgb(30, 180, 0);
+    --green-glow: rgb(154, 255, 134);
+    --green-shadow: rgb(72, 255, 35);
+    --red: rgb(156, 20, 10);
+    --red-glow: rgb(252, 89, 48);
+    --red-shadow: rgb(255, 39, 39);
+    --yellow: rgb(187, 162, 21);
+    --yellow-glow: rgb(255, 240, 157);
+    --yellow-shadow: rgb(255, 229, 83);
+    
+}
+
+
+
+body{
+    margin: 0;
+    background-color: rgb(159, 205, 226);
+}
+
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px ;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue{
+    grid-area: azul;
+    background-color:var(--blue);
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color:var(--red);
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color:var(--yellow);
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: verde;
+    background-color:var(--green);
+    border-top-left-radius: 100%;
+}
+
+.selected0, .selected1, .selected2, .selected3 {
+    transition: ease all .125s;
+    --light: saturate(1.2) brightness(1.8);
+    --light-inside: 0 0 2em;
+    --light-halo: 0px 0px 8px;
+}
+
+.selected3 {
+    box-shadow: inset var(--blue-glow) var(--light-inside); 
+    filter: var(--light) drop-shadow(var(--light-halo) var(--blue-shadow));
+}
+
+.selected0 {
+    box-shadow: inset var(--green-glow) var(--light-inside); 
+    filter: var(--light) drop-shadow(var(--light-halo) var(--green-shadow));
+}
+
+.selected1 {
+    box-shadow: inset var(--red-glow) var(--light-inside); 
+    filter: var(--light) drop-shadow(var(--light-halo) var(--red-shadow));
+}
+
+.selected2 {
+    box-shadow: inset var(--yellow-glow) var(--light-inside); 
+    filter: var(--light) drop-shadow(var(--light-halo) var(--yellow-shadow));
+}

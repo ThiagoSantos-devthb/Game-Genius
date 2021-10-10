@@ -1,5 +1,6 @@
 # Genius era um brinquedo muito popular na década de 1980 distribuído pela Brinquedos Estrela
 ![Genius](genius.jpg)
+[https://frosty-booth-175192.netlify.app/]
 
 ## Projeto para praticas em javascript
 
